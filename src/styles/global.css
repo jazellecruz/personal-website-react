@@ -1,0 +1,45 @@
+@import url("//fonts.cdnfonts.com/css/recoleta");
+@import url("//fonts.cdnfonts.com/css/itc-avant-garde-gothic-std-book");
+@import url('//fonts.cdnfonts.com/css/inter');
+@import url("//fonts.googleapis.com/css2?family=Lora&display=swap");
+
+:root{
+  --accentFont: "Recoleta";
+  --accentFontv2: "Lora";
+  --mainFont: "ITC Avant Garde Gothic Std Book";
+  --mainFontv2: "Inter";
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #252525;
+  font-family: var(--mainFontv2);
+  color: #fff;
+  text-align: center;
+}
+
+.accented-text {
+  font-family: var(--accentFont);
+}
+
+.title-section {
+  font-size: 36px;
+}
+
+.section-root {
+  margin: 24px 0;
+}
+
+.title-section {
+  font-size: 44px;
+}
+
+p{
+  font-size: 20px;
+  font-weight: 300;
+  color: #ced0d1;
+}
