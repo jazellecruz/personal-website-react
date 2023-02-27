@@ -16,30 +16,37 @@
 }
 
 body {
-  background-color: #252525;
-  font-family: var(--mainFontv2);
-  color: #fff;
+  /* background-color: #252525;
+  color: #fff; */
+  font-family: var(--mainFont);
   text-align: center;
+}
+
+main {
+  width: 56rem;
+  margin: 0 auto;
 }
 
 .accented-text {
   font-family: var(--accentFont);
 }
 
-.title-section {
+/* .title-section {
   font-size: 36px;
-}
+} */
 
 .section-root {
-  margin: 24px 0;
+  margin: calc(4vh * 2.6) 0;
 }
 
 .title-section {
   font-size: 44px;
+  font-weight: 900;
+  margin-bottom: 20px;
 }
 
 p{
   font-size: 20px;
-  font-weight: 300;
-  color: #ced0d1;
+  line-height: 34px;
+  /* color: #ced0d1; */
 }

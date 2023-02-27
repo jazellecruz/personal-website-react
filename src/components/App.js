@@ -1,4 +1,5 @@
 import "../styles/global.css";
+import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
 import AboutMe from "../components/AboutMe";
 import Projects from "../components/Projects";
@@ -8,11 +9,14 @@ import Socials from "../components/Socials"
 function App() {
   return (
     <div className="App">
-      <Hero />
-      <AboutMe />
-      <Projects />
-      <Contact />
-      <Socials />
+    <Navbar />
+      <main>
+        <Hero />
+        <AboutMe />
+        <Projects />
+        <Contact />
+        <Socials />
+      </main>
     </div>
   );
 }

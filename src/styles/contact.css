@@ -1,0 +1,29 @@
+form {
+  text-align: left;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.input-box {
+  border: 2px solid;
+  border-radius: 4px;
+  border-color: rgb(179, 177, 177);
+}
+
+.small-input{
+  height: 36px;
+  width: 100%;
+}
+
+textarea {
+  height: 120px;
+}
+
+.name-email-container {
+  display: flex;
+  gap: 20px;
+}
+
+.name-email-container div {
+  width: 100%;
+}

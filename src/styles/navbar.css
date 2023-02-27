@@ -1,0 +1,16 @@
+.navbar-root {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+ul {
+  display: flex;
+  gap: 12px
+}
+
+ul li {
+  list-style: none;
+  margin-left: 32px;
+  font-size: 17px;
+}
