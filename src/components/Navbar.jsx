@@ -11,7 +11,7 @@ const Navbar = () => {
           <a href="#contact">contact</a>
         </li>
         <li>
-          <button>Resume</button>
+          <button className="resume-btn">Resume</button>
         </li>
       </ul>
     </div>
