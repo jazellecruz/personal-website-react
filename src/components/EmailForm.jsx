@@ -7,7 +7,11 @@ export const EmailForm = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm(process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_TEMPLATE_ID, form.current, process.env.REACT_APP_PUBLIC_KEY)
+    emailjs.sendForm(
+      process.env.REACT_APP_SERVICE_ID, 
+      process.env.REACT_APP_TEMPLATE_ID, 
+      form.current, process.env.REACT_APP_PUBLIC_KEY
+      )
       .then((result) => {
           console.log(result.text);
       }, (error) => {
@@ -17,27 +21,31 @@ export const EmailForm = () => {
 
   return (
     <form ref={form} onSubmit={sendEmail}>
-      <div className="name-email-container">
-        <div>
-          <label>Name</label>
-          <br/>
-          <input type="text" name="user_name" className="input-box small-input"/>
+      <div className="input-group">
+        <div className="name-email-container">
+            <div>
+              <label>Name</label>
+              <input type="text" 
+                name="user_name" 
+                className="input-box small-input"
+                placeholder="Your name"/>
+            </div>
+            <div>
+              <label>Email Address</label>
+              <input type="email" 
+                name="user_email" 
+                className="input-box small-input"
+                placeholder="Your email"/>
+            </div>
+          </div>
         </div>
-        <div>
-          <label>Email</label>
-          <br/>
-          <input type="email" name="user_email" className="input-box small-input"/>
-        </div>
+      <div className="input-group">
+        <label>Message</label>
+        <textarea name="message" 
+          className="input-box"
+          placeholder="Your message"/>
       </div>
-      <label>Subject</label>
-      <br/>
-      <input type="text" name="user_subject" className="subject-input input-box small-input"/>
-      <br />
-      <label>Message</label>
-      <br/>
-      <textarea name="message" className="message-input input-box"/>
-      <br/>
-      <input type="submit" value="Send" />
+      <button type="submit" className="submit-btn">Send</button>
     </form>
   );
 };
