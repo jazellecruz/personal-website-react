@@ -50,3 +50,25 @@ p{
   line-height: 34px;
   /* color: #ced0d1; */
 }
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+::-webkit-scrollbar {
+  width: .3em;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: none;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(136, 136, 136);
+  border-radius: 20px;
+}
+
+
+/* background-color: #292836
+   accentcolor: #a5a1ff*/
