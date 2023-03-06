@@ -2,12 +2,20 @@
 @import url("//fonts.cdnfonts.com/css/itc-avant-garde-gothic-std-book");
 @import url('//fonts.cdnfonts.com/css/inter');
 @import url("//fonts.googleapis.com/css2?family=Lora&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap');
+
+@font-face {
+  font-family: "Matter";
+  src: url("../fonts/Matter-Regular.otf") format("opentype");
+}
 
 :root{
   --accentFont: "Recoleta";
   --accentFontv2: "Lora";
   --mainFont: "ITC Avant Garde Gothic Std Book";
   --mainFontv2: "Inter";
+  --mainFontv3: "Matter";
+  --mainFontv4: "Raleway"
 }
 
 * {
@@ -18,12 +26,12 @@
 body {
   /* background-color: #252525;
   color: #fff; */
-  font-family: var(--mainFont);
-  text-align: center;
+  font-family: var(--mainFontv4);
+  /* text-align: center; */
 }
 
 main {
-  width: 56rem;
+  width: 65rem;
   margin: 0 auto;
 }
 
@@ -36,7 +44,7 @@ main {
 } */
 
 .section-root {
-  margin: calc(4vh * 2.6) 0;
+  margin: calc(15rem - 2vh) 0;
 }
 
 .title-section {
@@ -46,7 +54,8 @@ main {
 }
 
 p{
-  font-size: 20px;
+  font-size: 22px;
+  font-weight: 400;
   line-height: 34px;
   /* color: #ced0d1; */
 }
@@ -54,6 +63,14 @@ p{
 a {
   text-decoration: none;
   color: inherit;
+}
+
+ul li {
+  list-style: none;
+}
+
+.bold-text {
+  font-weight: 600;
 }
 
 ::-webkit-scrollbar {
@@ -72,3 +89,13 @@ a {
 
 /* background-color: #292836
    accentcolor: #a5a1ff*/
+
+/* RESPONSIVE */
+
+@media only screen and (max-width: 1097px) {
+  main {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0 2rem;
+  }
+}

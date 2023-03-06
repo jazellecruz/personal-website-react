@@ -1,5 +1,5 @@
 .hero-section{
-  margin: calc(8vh * 2) 0;
+  margin: calc(10vh * 2) 0;
 }
 
 .name {
@@ -7,10 +7,17 @@
   margin: 6px 0 ;
 }
 
-.intro {
-  font-size: 28px;
+.tagline {
+  font-size: 36px;
+  margin-bottom: 25px;
+  font-weight: 600;
 }
 
 .job-title{
   font-weight: bolder;
+}
+
+.intro {
+  font-weight: 18px;
+  margin-top: 25px;
 }

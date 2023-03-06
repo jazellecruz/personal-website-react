@@ -1,7 +1,7 @@
 form {
   text-align: left;
-  width: 90%;
-  margin: 40px auto 0;
+  width: 52rem;
+  margin: 40px 0 0;
   
 }
 
@@ -50,6 +50,7 @@ label {
 .submit-btn{
   cursor: pointer;
   font-size: 20px;
+  font-family: inherit;
   width: 7.5rem;
   height: 3rem;
   margin-top: 14px;
