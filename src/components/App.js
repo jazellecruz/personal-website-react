@@ -9,8 +9,8 @@ import Socials from "../components/Socials"
 function App() {
   return (
     <div className="App">
-    <Navbar />
       <main>
+        <Navbar />
         <Hero />
         <AboutMe />
         <Projects />

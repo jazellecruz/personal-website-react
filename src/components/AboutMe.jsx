@@ -1,15 +1,33 @@
 import "../styles/aboutMe.css"
+import me from "../assets/me_001.jpg"
 
 const AboutMe = () => {
   return (
-    <div className="section-root">
-      <h3 className="accented-text title-section">about me</h3>
-      <p className="about-me-desc">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </p>
+    <div className="section-root about">
+      <h3 className="accented-text title-section">Hello, World!</h3>
+      <div className="about-container">
+        <div className="about-desc-container">
+          <p className="about-me-desc bold-text">
+            I'm Jazelle and I like to craft digital-goodies for the web. </p>
+          <p className="about-me-desc">
+            My interest in programming started when I accomplished the challenge of styling and centering a div (which, not gonna lie, was lowkey hard) from my ninth-grade computer class.
+            With curiosity—and of course confidence, I decided to dive headfirst into the complex and intricate world of programming (and oh boy I was in for a ride!).</p>
+          <p className="about-me-desc">
+            Looking back from now, I'm glad I did. Despite the back pain and headaches it gives, I enjoy building projects that I am excited and passionate about.
+          </p>
+          <p>
+            I am now on a mission to explore and level-up my tech skills (and to also score a sweet sweet job!).
+          </p>
+          <p>
+          Oh by the way, here is a list of technologies and tools I like to use: 
+          </p>
+        </div>
+      <div className="img-box">
+        <img className="me-img" src={me} alt="a cute pic of the developer and her cat"></img>
+      </div>
+
+      </div>
+      
     </div>
   )
 }
