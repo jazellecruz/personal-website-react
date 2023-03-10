@@ -1,4 +1,5 @@
 import "../styles/global.css";
+import Container from '@mui/material/Container';
 import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
 import AboutMe from "../components/AboutMe";
@@ -16,7 +17,7 @@ function App() {
         <Projects />
         <Contact />
         <Socials />
-      </main>
+        </main>
     </div>
   );
 }

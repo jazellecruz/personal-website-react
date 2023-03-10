@@ -8,7 +8,7 @@ const AboutMe = () => {
       <div className="about-container">
         <div className="about-desc-container">
           <p className="about-me-desc bold-text">
-            I'm Jazelle and I like to craft digital-goodies for the web. </p>
+            I'm Jazelle Cruz and crafting digital-goodies for the web is my art.</p>
           <p className="about-me-desc">
             My interest in programming started when I accomplished the challenge of styling and centering a div (which, not gonna lie, was lowkey hard) from my ninth-grade computer class.
             With curiosity—and of course confidence, I decided to dive headfirst into the complex and intricate world of programming (and oh boy I was in for a ride!).</p>
@@ -22,10 +22,6 @@ const AboutMe = () => {
           Oh by the way, here is a list of technologies and tools I like to use: 
           </p>
         </div>
-      <div className="img-box">
-        <img className="me-img" src={me} alt="a cute pic of the developer and her cat"></img>
-      </div>
-
       </div>
       
     </div>
