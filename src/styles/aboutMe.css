@@ -1,7 +1,6 @@
 .about-container p {
   font-size: 17px;
   line-height: 1.6;
-  text-align: left;
   margin-bottom: 20px;
 }
 
@@ -10,25 +9,6 @@
   width: 100%
 }
 
-.about-container {
-  display: flex;
-  max-height: 100%;
-  gap: 3rem
-}
-
-.skills-list{
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
-
-.me-img {
-  border-radius: 10px;
-  width: inherit;
-  height: inherit;
-  object-fit: contain;
-}
 
 @media only screen and (max-width: 1013px) {
 
@@ -48,7 +28,6 @@
   .about-container {
     flex-direction: column;
   }
-
 
   .img-box{
     display: flex;

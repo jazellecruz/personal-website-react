@@ -1,5 +1,10 @@
 .hero-section{
-  margin: calc(10vh * 2) 0;
+  margin: 10rem 0;
+}
+
+.hero-section p{
+  font-size: 20px;
+  margin-bottom: 16px;
 }
 
 .name {
@@ -8,9 +13,9 @@
 }
 
 .tagline {
-  font-size: 36px;
-  margin-bottom: 25px;
-  font-weight: 600;
+  font-size: 48px;
+  margin-bottom: 20px;
+  font-weight: 700;
 }
 
 .job-title{
@@ -20,4 +25,22 @@
 .intro {
   font-weight: 18px;
   margin-top: 25px;
+}
+
+.avatar-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.MuiAvatar-root.MuiAvatar-circular {
+  width: 11rem;
+  height: 11rem;
+  margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 760px) {
+  .tagline {
+    font-size: 43px;
+  }
 }
