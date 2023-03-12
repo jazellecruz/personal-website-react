@@ -6,7 +6,7 @@ const projectData = [
     url: "https://pseudojson.onrender.com",
     gitHub: "https://github.com/jazellecruz/PseudoJSON-rest-api.git",
     img: "",
-    tools: ["Node.js", "Express", "MongoDB", "Mongoose", "EJS"]
+    tools: ["Node.js", "Express", "MongoDB", "Mongoose", "EJS", "Render"]
   },
   {
     title: "The Watcher - News Website",
@@ -23,6 +23,13 @@ const projectData = [
     gitHub: "https://github.com/jazellecruz/weather-labs-web-app",
     img: "",
     tools: ["Node.js", "Express", "OpenWeatherMap's API","EJS", "Render"]
+    },
+    {
+    title: "Booked - Personal Book Manager",
+    desc: "A personal book manager that I use to organize my books collection.",
+    gitHub: "https://github.com/jazellecruz/weather-labs-web-app",
+    img: "",
+    tools: ["Node.js", "Express", "MySQL", "React.js", "Material UI", "JWT"]
     },
 ]
 
