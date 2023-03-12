@@ -8,11 +8,10 @@ const Hero = () => {
       <div className="avatar-container">
         <Avatar src={me} />
       </div>
-      <p>Hi, my name is Jazelle</p>
+      <p>Hi, my name is Jazz</p>
       <h1 className="tagline accented-text">I turn ideas into life, one code at a time.</h1>
       {/* <p className="tagline">I turn ideas into life, one code at a time.</p> */}
-      <p>I'm a <span className="job-title">Software Engineer</span> student who 
-      likes to solve problems through code.</p>
+      <p>an aspiring <span className="job-title">Software Engineer</span>.</p>
     </div>
   )
 }
