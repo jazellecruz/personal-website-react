@@ -26,7 +26,7 @@
 body {
   /* background-color: #252525;
   color: #fff; */
-  font-family: var(--mainFontv4);
+  font-family: var(--mainFont);
   text-align: center;
 }
 
@@ -55,7 +55,7 @@ main {
 }
 
 p{
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 400;
   line-height: 34px;
   /* color: #ced0d1; */
@@ -68,12 +68,13 @@ a {
 
 ul li {
   list-style: none;
+  padding: 0;
 }
 
 .tech-list{
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 18px;
 }
 
 
