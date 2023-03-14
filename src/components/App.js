@@ -1,5 +1,4 @@
 import "../styles/global.css";
-import Container from '@mui/material/Container';
 import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
 import AboutMe from "../components/AboutMe";
@@ -10,8 +9,9 @@ import Socials from "../components/Socials"
 function App() {
   return (
     <div className="App">
+      <Navbar />
       <main>
-        <Navbar />
+      
         <Hero />
         <AboutMe />
         <Projects />

@@ -2,7 +2,7 @@ import "../styles/aboutMe.css"
 
 const AboutMe = () => {
   return (
-    <div className="section-root about">
+    <div className="section-root about" >
       <h3 className="accented-text title-section">Hello, World!</h3>
       <div className="about-container">
         <div className="about-desc-container">
