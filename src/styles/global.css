@@ -24,8 +24,8 @@
 }
 
 body {
-  /* background-color: #252525;
-  color: #fff; */
+  /* background-color: #1a1a1a;
+  color: #f1e9e9; */
   font-family: var(--mainFont);
   text-align: center;
 }
@@ -56,7 +56,7 @@ main {
 
 p{
   font-size: 20px;
-  font-weight: 400;
+  font-weight: 200;
   line-height: 34px;
   /* color: #ced0d1; */
 }
@@ -101,7 +101,7 @@ ul li {
 
 /* RESPONSIVE */
 
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 800px) {
   main {
     box-sizing: border-box;
     width: 100%;
