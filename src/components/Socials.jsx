@@ -1,10 +1,32 @@
-import React from 'react'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {faGithub, faLinkedinIn} from "@fortawesome/free-brands-svg-icons";
+import { socials } from "../constants/constants";
+import readcv from "../assets/readcv-darkmode.png"
+
 
 const Socials = () => {
   return (
     <div className="section-root" id="socials">
-      <h3 className="accented-text title-section">Don't be a stranger— say hi!</h3>
-      <p>Let's get social! Connect with me and let's bring some digital magic to the world 🚀.</p>
+      <p className="sub-text highlight-text">Socials</p>
+      <h3 className="large-text">Don't be a stranger— say hi!</h3>
+      
+      <div className="socials-svg-container">
+        <a href={socials.github} target="_blank" rel="noopener noreferrer">
+          <FontAwesomeIcon icon={faGithub}/>
+        </a>
+        <a href={socials.linkedIn} target="_blank" rel="noopener noreferrer">
+          <FontAwesomeIcon icon={faLinkedinIn}/>
+        </a>
+        <a href={socials.readCV} target="_blank" rel="noopener noreferrer">
+          <img src={readcv} alt="readcv-logo"/>
+        </a>
+      </div>
+    
+      {/* <a href={socials.linkedIn} target="_blank" rel="noopener noreferrer">
+        <FontAwesomeIcon icon={faLinkedin}/>
+      </a>
+       */}
+      
     </div>
   )
 }

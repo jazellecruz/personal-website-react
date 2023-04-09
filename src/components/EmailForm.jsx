@@ -1,7 +1,7 @@
 import { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 
-export const EmailForm = () => {
+export const EmailForm = ({setAndOpenSnackbar}) => {
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -12,10 +12,12 @@ export const EmailForm = () => {
       process.env.REACT_APP_TEMPLATE_ID, 
       form.current, process.env.REACT_APP_PUBLIC_KEY
       )
-      .then((result) => {
-          console.log(result.text);
-      }, (error) => {
-          console.log(error.text);
+      .then(result => {
+          form.current.reset();
+          setAndOpenSnackbar("success", "Successfully sent message!")
+      }, error => {
+        form.current.reset();
+        setAndOpenSnackbar("error", "Failed to send message! Try again later.")
       });
   };
 
@@ -45,7 +47,7 @@ export const EmailForm = () => {
           className="input-box"
           placeholder="Your message"/>
       </div>
-      <button type="submit" className="submit-btn">Send</button>
+      <button type="submit" className="submit-btn">Shoot</button>
     </form>
   );
 };

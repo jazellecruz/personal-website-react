@@ -1,25 +1,37 @@
+import {skills} from "../constants/constants"
 import "../styles/aboutMe.css"
 
 const AboutMe = () => {
+  const tools = ["JavaScript", "Node.js", "React.js", "MySQL", "MongoDB", "Postman", "Heroku", "Render", "Vercel"]
+  
   return (
-    <div className="section-root about" >
-      <h3 className="accented-text title-section">Hello, World!</h3>
+    <div className="section-root about">
       <div className="about-container">
         <div className="about-desc-container">
+          <p className="about-me-desc">Hello! My name is <span className="highlight-text">Jazz Cruz</span>.</p>
+          <p className="about-me-desc">
+            I enjoy planning and developing software using <span className="highlight-text">NodeJS</span>.
+            I focus more on the <span className="highlight-text">back-end</span> side of development 
+            and enjoy designing the application's architecture with a touch of creativity. My main experience is 
+            in <span className="highlight-text">developing web applications</span> using several frameworks, 
+            such as <span className="highlight-text">ExpressJS</span>, as well as databases 
+            like <span className="highlight-text">MySQL</span>.
+          </p>
           <p className="about-me-desc bold-text">
-            I'm Jazz Cruz and crafting digital-goodies for the web is my art.</p>
+            I am currently on a mission to explore and <span className="highlight-text">level-up</span> my tech 
+            skills (and to also score a sweet sweet <span className="highlight-text">job</span>!).
+          </p>
           <p className="about-me-desc">
-            My interest in programming started when I accomplished the challenge of styling and centering a div (which, not gonna lie, was lowkey hard) from my ninth-grade computer class.
-            With curiosity—and of course confidence, I decided to dive headfirst into the complex and intricate world of programming (and oh boy I was in for a ride!).</p>
-          <p className="about-me-desc">
-            Looking back from now, I'm glad I did. Despite the back pain and headaches it gives, I enjoy building projects that I am excited and passionate about.
+            Oh by the way, here is a list of <span className="highlight-text">technologies</span> and <span className="highlight-text">tools</span> I like to use: 
           </p>
-          <p>
-            I am now on a mission to explore and level-up my tech skills (and to also score a sweet sweet job!).
-          </p>
-          <p>
-          Oh by the way, here is a list of technologies and tools I like to use: 
-          </p>
+          <ul className="skills-list">
+            {skills.map(skill => 
+              <li className=" bold-text lighter-text">
+              <img src={require(`../assets/${skill.icon}`)}  alt="tool-logo" />
+              {skill.tool}
+              </li>
+            )}
+          </ul>
         </div>
       </div>
       
