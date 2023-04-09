@@ -1,58 +1,53 @@
 .project-container {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
   margin-top: 38px;
 }
 
 .project-item {
   box-sizing: border-box;
-  border-radius: 8px;
-  padding: 32px;
-  /* background-color: bisque; */
+  border: 1px solid #242323;
+  background-color: #1d1c1c;
+  border-radius: 40px;
+  padding: 28px;
   display: flex;
+  flex-direction: column;
   width: 100%;
-  height: 100%;
-  gap: 18px;
-}
-
-.project-info {
-  text-align: left;
-  width: 100%;
-  height: 100%;
+  height: 480px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 24px;
 }
 
-.project-info footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.project-desc{
+  font-size: 15px;
+  font-weight: lighter;
 }
 
 .project-links-container {
   display: flex;
   align-items: center;
+  justify-content: flex-end;
   gap: 20px;
 }
 
-.project-item p {
-  font-size: 14.75px;
-}
-
-.project-links-container a img {
-  width: 28px;
+.project-links-container a .svg-inline--fa  {
+  height: 28px;
 }
 
 .project-title{
-  margin-bottom: 2px;
+  font-size: 32px;
 }
 
 .project-img{
-  width: 64px;
+  width: 92px;
+}
+
+.project-info{
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
 }
 
 .project-desc {
@@ -60,39 +55,32 @@
 }
 
 .tech-list.project{
-  font-size: 13px;
+  margin: 6px 0;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 12px;
+  gap: 12px
 }
 
-@media only screen and (max-width: 1000px) {
-  /* .project-item{
-    flex-direction: column;
-  } */
 
-  /* .project-img-container {
-    width: 80%;
-
-  } */
+@media only screen and (max-width: 900px) {
+  .project-container{
+    grid-template-columns: 1fr;
+  }
 }
 
-@media only screen and (max-width: 640px) {
-  .project-item{
-    flex-direction: column;
+@media only screen and (max-width: 385px) {
+  .project-desc{
+    font-size: 13px;
+    font-weight: lighter;
   }
-  .project-icon {
-    align-self: flex-start;
-  }
-
-  .project-info footer {
-    flex-direction: column;
-    gap: 14px;
-  }
-  
-  .tech-list.project {
-    align-self: start;
-  }
-
-  .project-links-container {
-    align-self: end;
-  }
-  
 }
+
+
+@media (prefers-color-scheme: dark) {
+  .project-item {
+    background-color: #1f1f1f;
+  }
+}
+
+/* watcher: #fdcfda*/

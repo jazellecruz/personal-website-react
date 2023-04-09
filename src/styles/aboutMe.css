@@ -1,37 +1,45 @@
 .about-container p {
-  font-size: 17px;
   line-height: 1.6;
   margin-bottom: 20px;
+  font-weight: bolder;
 }
 
-.img-box{
-  height: 100%;
-  width: 100%
+.about-desc-container {
+  padding-right: 112px;
+}
+
+.skills-list{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 22px;
+}
+
+.skills-list li{
+  display: flex;
+  gap: 6px;
+  font-size: 18px;
+  align-items: center;
+  justify-content: center;
+}
+
+.skills-list li img{
+  width: 25px;
+}
+
+.about-me-desc{
+  font-size: 26px;
 }
 
 
-@media only screen and (max-width: 1013px) {
 
-  .me-img {
-    width: 324px;
-    height: 424px;
-  }
-
-  .img-box{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+@media only screen and (max-width: 760px) {
+  .about-me-desc {
+    font-size: 22px;
   }
 }
 
-@media only screen and (max-width: 805px) {
-  .about-container {
-    flex-direction: column;
-  }
-
-  .img-box{
-    display: flex;
-    justify-content: center;
+@media only screen and (max-width: 900px) {
+  .about-desc-container {
+    padding-right: 0;
   }
 }
-

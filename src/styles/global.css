@@ -1,22 +1,9 @@
-@import url("//fonts.cdnfonts.com/css/recoleta");
-@import url("//fonts.cdnfonts.com/css/itc-avant-garde-gothic-std-book");
-@import url('//fonts.cdnfonts.com/css/inter');
-@import url("//fonts.googleapis.com/css2?family=Lora&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap');
 
 @font-face {
-  font-family: "Matter";
-  src: url("../fonts/Matter-Regular.otf") format("opentype");
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-Light.ttf")
 }
 
-:root{
-  --accentFont: "Recoleta";
-  --accentFontv2: "Lora";
-  --mainFont: "ITC Avant Garde Gothic Std Book";
-  --mainFontv2: "Inter";
-  --mainFontv3: "Matter";
-  --mainFontv4: "Raleway"
-}
 
 * {
   margin: 0;
@@ -24,41 +11,42 @@
 }
 
 body {
-  /* background-color: #1a1a1a;
-  color: #f1e9e9; */
-  font-family: var(--mainFont);
-  text-align: center;
-}
+  background-color: #0a0a0a;
+  background-size: 100%  100%;
+  background-position: center;
+  backdrop-filter: blur(120px);
+  background-image: radial-gradient(70% 5% at  60% 0%,#352157fa, transparent 100%),
+    radial-gradient(500px 250px  at 80% 7%,#4c1e55fa, transparent 100%),
+    radial-gradient(600px 900px at 36% 42%,#453363fa, transparent 100%),
+    radial-gradient(900px 700px at 70% 59%, #401449fa, transparent 100%),
+    radial-gradient(100% 8% at 0% 100%,#3b265efa, transparent 100%),
+    radial-gradient(500px 250px  at 0% 92%,#56265ffa, transparent 100%);
+  color: #e9e9e9;
+  font-family: "Poppins", sans-serif;
+  text-align: left;  
+  font-weight: bolder;
+} 
 
 main {
-  /* background-color: beige; */
-  width: 46rem;
+  box-sizing: border-box;
+  width: 832px;
   margin: 0 auto;
 }
 
-.accented-text {
-  font-family: var(--mainFont);
+.highlight-text {
+  color: #ca6addfa;
 }
-
-/* .title-section {
-  font-size: 36px;
-} */
 
 .section-root {
-  margin: calc(8rem + 20vh) 0;
+  padding: 180px 0;
 }
 
-.title-section {
+.large-text {
   font-size: 38px;
-  font-weight: 900;
-  margin-bottom: 20px;
 }
 
-p{
-  font-size: 20px;
-  font-weight: 200;
-  line-height: 34px;
-  /* color: #ced0d1; */
+.sub-text{
+  font-size: 26px;
 }
 
 a {
@@ -71,40 +59,84 @@ ul li {
   padding: 0;
 }
 
-.tech-list{
+.footer-section {
+  padding: 20px 0
+}
+
+.footer-text{
+  font-size: 14px;
+}
+
+#socials svg{
+  height: 56px;
+}
+
+#socials img{
+  height: 56px;
+}
+
+.socials-svg-container{
+  padding-top: 44px;
   display: flex;
   flex-wrap: wrap;
-  gap: 18px;
+  align-items: center;
+  gap: 56px;
 }
 
-
-.bold-text {
-  font-weight: 600;
+::-webkit-scrollbar { 
+  display: none;  /* Safari and Chrome */
 }
 
-::-webkit-scrollbar {
-  width: .3em;
-}
-
-::-webkit-scrollbar-track {
-  box-shadow: none;
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: rgb(136, 136, 136);
-  border-radius: 20px;
-}
-
-
-/* background-color: #292836
-   accentcolor: #a5a1ff*/
 
 /* RESPONSIVE */
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 900px) {
   main {
     box-sizing: border-box;
+    width: 464px;
+  }
+}
+
+/* Mobile size*/
+@media only screen and (max-width: 500px) {
+  .section-root {
+    padding: 112px 0;
+  }
+  
+  main {
     width: 100%;
-    padding: 0 1.5rem;
+    padding: 0 18px;
+  }
+}
+
+@media only screen and (max-width: 385px) {
+ 
+  .large-text{
+    font-size: 31px;
+  }
+
+  .sub-text{
+    font-size: 22px;
+  }
+}
+
+
+@media (prefers-color-scheme: dark) {
+  body{
+    background-color: #0a0a0a;
+    background-size: 100%  100%;
+    background-position: center;
+    backdrop-filter: blur(120px);
+    background-image: radial-gradient(70% 5% at  60% 0%,#352157fa, transparent 100%),
+        radial-gradient(500px 250px  at 80% 7%,#4c1e55fa, transparent 100%),
+        radial-gradient(600px 900px at 36% 42%,#453363fa, transparent 100%),
+        radial-gradient(900px 700px at 70% 59%, #401449fa, transparent 100%),
+        radial-gradient(100% 8% at 0% 100%,#3b265efa, transparent 100%),
+        radial-gradient(500px 250px  at 0% 92%,#56265ffa, transparent 100%);
+    color: #e9e9e9;
+  }
+
+  .highlight-text {
+    color: #cb72ddfa;
   }
 }
