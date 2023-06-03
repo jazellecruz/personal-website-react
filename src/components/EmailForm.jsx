@@ -1,7 +1,22 @@
-import { useRef } from 'react';
+import { useRef, useContext } from 'react';
 import emailjs from '@emailjs/browser';
+import { ToastContext } from '../context';
 
-export const EmailForm = ({setAndOpenSnackbar}) => {
+export const EmailForm = () => {
+  
+  const toastType = {
+    success: {
+      message: "Successfully sent message!",
+      severity: "success"
+    },
+    error: {
+      message: "Failed to send message.",
+      severity: "error"
+    }
+  }
+
+  const defineToastType = useContext(ToastContext)
+
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -14,10 +29,10 @@ export const EmailForm = ({setAndOpenSnackbar}) => {
       )
       .then(result => {
           form.current.reset();
-          setAndOpenSnackbar("success", "Successfully sent message!")
+          defineToastType(toastType.success)
       }, error => {
         form.current.reset();
-        setAndOpenSnackbar("error", "Failed to send message! Try again later.")
+        defineToastType(toastType.error)
       });
   };
 
@@ -49,6 +64,7 @@ export const EmailForm = ({setAndOpenSnackbar}) => {
       </div>
       <button type="submit" className="submit-btn">Shoot</button>
     </form>
+
   );
 };
 
