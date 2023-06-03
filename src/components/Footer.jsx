@@ -3,11 +3,12 @@ const Footer = () => {
 
   const style = {
     padding: "8rem 0 28px",
-    textAlign: "center"
+    textAlign: "center",
   }
+
   return (
     <footer className="footer-section" style={style}>
-      <p className="footer-text bold-text">developed by Jazz Cruz</p>
+      <p className="footer-text">developed by Jazz Cruz</p>
     </footer>
   )
 }

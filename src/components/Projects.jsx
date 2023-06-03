@@ -7,7 +7,6 @@ const Projects = () => {
     <div className="section-root" id="projects">
       <p className="sub-text highlight-text">My projects</p>
       <h3 className="large-text">Yes, I Code and Here's the Proof</h3>
-      
       <div className="project-container">
         {projectData.map(({title, desc, url, img, gitHub, tools, color}) => 
           <ProjectItem 
