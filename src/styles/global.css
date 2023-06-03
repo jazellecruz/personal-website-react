@@ -4,7 +4,6 @@
   src: url("../fonts/Poppins-Light.ttf")
 }
 
-
 * {
   margin: 0;
   padding: 0;
@@ -14,18 +13,23 @@ body {
   background-color: #0a0a0a;
   background-size: 100%  100%;
   background-position: center;
-  backdrop-filter: blur(120px);
+  backdrop-filter: blur(150px);
   background-image: radial-gradient(70% 5% at  60% 0%,#352157fa, transparent 100%),
     radial-gradient(500px 250px  at 80% 7%,#4c1e55fa, transparent 100%),
     radial-gradient(600px 900px at 36% 42%,#453363fa, transparent 100%),
     radial-gradient(900px 700px at 70% 59%, #401449fa, transparent 100%),
     radial-gradient(100% 8% at 0% 100%,#3b265efa, transparent 100%),
-    radial-gradient(500px 250px  at 0% 92%,#56265ffa, transparent 100%);
+    radial-gradient(500px 250px  at 0% 92%,#461e4dfa, transparent 100%);
   color: #e9e9e9;
   font-family: "Poppins", sans-serif;
   text-align: left;  
   font-weight: bolder;
+  overflow-x: hidden;
 } 
+
+.App{
+  position: relative;
+}
 
 main {
   box-sizing: border-box;
@@ -65,13 +69,14 @@ ul li {
 
 .footer-text{
   font-size: 14px;
+  font-weight: 400;
 }
 
-#socials svg{
+.socials-svg-container svg path{
   height: 56px;
 }
 
-#socials img{
+.socials-svg-container img{
   height: 56px;
 }
 
@@ -83,9 +88,19 @@ ul li {
   gap: 56px;
 }
 
-::-webkit-scrollbar { 
-  display: none;  /* Safari and Chrome */
+::-webkit-scrollbar {
+  width: .3em;
 }
+
+::-webkit-scrollbar-track {
+  box-shadow: none;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(88, 88, 88);
+  border-radius: 20px;
+}
+
 
 
 /* RESPONSIVE */
@@ -126,17 +141,18 @@ ul li {
     background-color: #0a0a0a;
     background-size: 100%  100%;
     background-position: center;
-    backdrop-filter: blur(120px);
+    backdrop-filter: blur(150px);
     background-image: radial-gradient(70% 5% at  60% 0%,#352157fa, transparent 100%),
         radial-gradient(500px 250px  at 80% 7%,#4c1e55fa, transparent 100%),
         radial-gradient(600px 900px at 36% 42%,#453363fa, transparent 100%),
         radial-gradient(900px 700px at 70% 59%, #401449fa, transparent 100%),
         radial-gradient(100% 8% at 0% 100%,#3b265efa, transparent 100%),
-        radial-gradient(500px 250px  at 0% 92%,#56265ffa, transparent 100%);
+        radial-gradient(500px 250px  at 0% 92%,#461e4dfa, transparent 100%);
     color: #e9e9e9;
   }
 
   .highlight-text {
     color: #cb72ddfa;
   }
+  
 }

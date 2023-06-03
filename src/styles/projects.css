@@ -7,8 +7,8 @@
 
 .project-item {
   box-sizing: border-box;
-  border: 1px solid #242323;
-  background-color: #1d1c1c;
+  /* border: 1px solid #242323; */
+  background-color: #0a0a0a;
   border-radius: 40px;
   padding: 28px;
   display: flex;
@@ -32,16 +32,19 @@
   gap: 20px;
 }
 
-.project-links-container a .svg-inline--fa  {
-  height: 28px;
-}
-
-.project-title{
-  font-size: 32px;
+.project-links-container a svg {
+  height: 26px;
+  width: 26px;
 }
 
 .project-img{
   width: 92px;
+}
+.scale-on-hover{
+  transition: transform 0.25s ease-in-out;
+}
+.scale-on-hover:hover{
+  transform: scale(1.2);
 }
 
 .project-info{
@@ -71,16 +74,25 @@
 
 @media only screen and (max-width: 385px) {
   .project-desc{
-    font-size: 13px;
+    font-size: 12px;
     font-weight: lighter;
+    border-radius: 0px;
+  }
+
+  .project-item{
+    padding: 22px;
+    border-radius: 24px;
+    height: 440px;
+  }
+  .project-img{
+    width: 80px;
   }
 }
 
 
 @media (prefers-color-scheme: dark) {
   .project-item {
-    background-color: #1f1f1f;
+    background-color: #0a0a0a;
   }
 }
 
-/* watcher: #fdcfda*/

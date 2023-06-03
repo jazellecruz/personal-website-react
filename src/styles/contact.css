@@ -1,7 +1,17 @@
+
 form {
   text-align: left;
   width: 100%;
   margin: 40px 0 0;
+}
+
+.name-email-container {
+  display: flex;
+  gap: 20px;
+}
+
+.name-email-container div {
+  width: 100%;
 }
 
 .input-box {
@@ -10,7 +20,7 @@ form {
   border-radius: 4px;
   box-sizing: border-box;
   padding: 8px;
-  background-color: inherit;
+  background-color: transparent;
   outline: none;
   color: inherit; 
   font-size: 15px;
@@ -18,16 +28,6 @@ form {
 
 .small-input{
   height: 36px;
-  width: 100%;
-}
-
-
-.name-email-container {
-  display: flex;
-  gap: 20px;
-}
-
-.name-email-container div {
   width: 100%;
 }
 
@@ -46,7 +46,6 @@ label {
   display: inline-block;
   font-size: 15px;
 }
-
 
 .submit-btn{
   padding: 15px 40px;
@@ -94,7 +93,6 @@ label {
   margin-top: -1px;
 }
 
-
 .submit-btn:hover{
   padding: 15px 60px 15px 20px;
 }
@@ -104,6 +102,7 @@ label {
   opacity: 1;
   right: 15px;
 }
+
 
 @media only screen and (max-width: 900px) {
   .name-email-container{
