@@ -3,7 +3,6 @@ import gh from "../assets/github-logo.svg"
 import linkedIn from "../assets/linkedin-icon.svg"
 import readcv from "../assets/readcv-darkmode.png"
 
-
 const Socials = () => {
   return (
     <div className="section-root" id="socials">

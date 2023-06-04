@@ -2,7 +2,7 @@ import {ReactComponent as LinkIcon} from "../assets/link-icon.svg"
 import {ReactComponent as GitHubIcon} from "../assets/github-logo.svg"
 import "../styles/projects.css";
 
-const ProjectItem = ({title, desc, url, gitHub, img, tools, bgColor}) => {
+const ProjectItem = ({title, desc, url, gitHub, img}) => {
 
   return (
     <div className="project-item" >
@@ -33,12 +33,9 @@ const ProjectItem = ({title, desc, url, gitHub, img, tools, bgColor}) => {
               className="scale-on-hover">
               <GitHubIcon />
             </a>
-
           </div>
-          </div>
-
+        </div>
       </div>
-
     </div>
   )
 }
